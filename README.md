@@ -1,4 +1,4 @@
-# the-cocktail-finder
+# the_cocktail_finder
 
 It Is React App Which Is Able To Show Various Cocktails On Entering In The Input Tag.
 
