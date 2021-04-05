@@ -1,13 +1,230 @@
-body {
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+  background: #12c2e9; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #f64f59,
+    #c471ed,
+    #12c2e9
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #f64f59,
+    #c471ed,
+    #12c2e9
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  overflow-x: hidden;
+}
+
+div.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 12%;
+}
+
+div.main h1 {
+  margin-bottom: 60px;
+  font-family: 'Cinzel', serif;
+  font-weight: 500;
+  font-size: 60px;
+  color: aliceblue;
+}
+
+div.main h6.copy {
+  margin-top: 20px;
+  color: white;
+  text-transform: capitalize;
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 400;
+  font-size: 30px;
+}
+
+h1.mains {
+  font-family: 'Cinzel', serif;
+  font-weight: 500;
+  font-size: 60px;
+  color: aliceblue;
+}
+
+div.main input {
+  width: 50vw !important;
+  text-align: center;
+  padding: 18px 20px;
+  outline: none;
+  background-color: azure;
+  border: none;
+  box-shadow: 0;
+  border-radius: 40px;
+  border: 2px solid rgb(255, 255, 255);
+  margin-bottom: 30px;
+  font-size: 1.6em;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  color: black;
+}
+
+::placeholder {
+  font-size: 1.4em;
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 300;
+}
+
+div.main input:focus {
+  border: 2px solid rgb(255, 0, 98);
+}
+
+div.main button.btns {
+  padding: 10px 25px;
+  outline: none;
+  border: none;
+  border-radius: 35px;
+  border: 2px solid rgb(255, 0, 98);
+  background-color: white;
+  color: rgb(255, 0, 98);
+  font-size: 1.3em;
+  transition: all 0.4s ease-in;
+  cursor: pointer;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+div.main button.btns:hover {
+  border: 2px solid white;
+  background-color: rgb(255, 0, 98);
+  color: white;
+}
+
+div.old {
+  display: flex;
+  margin-top: 70px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 70px;
+  background-color: white;
+  box-shadow: 0px 1px 17px 3px rgba(0, 0, 0, 0.61);
+  -webkit-box-shadow: 0px 1px 17px 3px rgba(0, 0, 0, 0.61);
+  -moz-box-shadow: 0px 1px 17px 3px rgba(0, 0, 0, 0.61);
+}
+
+div.old div.row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 30px 10px;
+}
+
+div.old div.row div.col-md-5 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+div.old div.row div.col-md-5 img {
+  width: 90%;
+  height: 90%;
+  border-top-left-radius: 70px;
+  border-bottom-right-radius: 70px;
+  box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+}
+
+div.old div.row div.col-md-7 div.info {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+div.old div.row div.col-md-7 h2.title {
+  font-family: 'Cinzel', serif;
+  font-weight: 400;
+  font-size: 2.4em;
+}
+
+div.old div.row div.col-md-7 div.info div.type {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+div.old div.row div.col-md-7 div.info div.type p {
+  font-family: 'Merriweather', serif;
+  font-size: 15px;
+}
+
+div.old div.row div.col-md-7 div.info div.type .icon {
+  margin-bottom: 10px;
+  margin-right: 8px;
+}
+
+div.old div.row div.col-md-7 div.info div.glass .icon {
+  margin-bottom: 12px;
+}
+
+div.old div.row div.col-md-7 div.info div.glass {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-left: 25px;
+}
+
+div.old div.row div.col-md-7 div.info div.glass p {
+  font-family: 'Merriweather', serif;
+  font-size: 15px;
+}
+
+div.old div.row div.col-md-7 div.info div.type p.spaced,
+div.old div.row div.col-md-7 div.info div.glass p.spaced {
+  margin-left: 6px;
+  font-family: 'Quicksand', sans-serif;
+  font-size: 16px;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+
+div.old div.row div.col-md-7 div.instructions p {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+}
+
+div.old div.row div.col-md-7 div.instructions h5 {
+  font-family: 'Merriweather', serif;
+  text-transform: capitalize;
+  color: grey;
+}
+
+div.old div.row div.col-md-7 div.ingredients p {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+}
+
+div.old div.row div.col-md-7 div.ingredients div.valuesOfIngredients {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+div.old div.row div.col-md-7 div.ingredients div.valuesOfIngredients p {
+  font-family: 'Quicksand', sans-serif;
+  font-size: 20px;
+  color: grey;
+  text-transform: uppercase;
+  font-weight: 400;
 }
